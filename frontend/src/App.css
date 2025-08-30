@@ -1,0 +1,306 @@
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2px;
+}
+.panel-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #fff;
+}
+.panel-status-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.panel-status-dot.online {
+  background: #00c853;
+}
+.panel-status-dot.offline {
+  background: #d50000;
+}
+.panel-status-dot.maintenance {
+  background: #ffd700;
+}
+.panel-status-label {
+  font-size: 0.95rem;
+  background: #23252b;
+  color: #bdbdbd;
+  border-radius: 8px;
+  padding: 2px 10px;
+  font-weight: 500;
+}
+.panel-location {
+  color: #bdbdbd;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.panel-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  color: #fff;
+}
+.panel-value {
+  font-weight: 600;
+  color: #fff;
+}
+.panel-bar-bg {
+  width: 100%;
+  height: 8px;
+  background: #44454a;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  margin-top: 2px;
+  position: relative;
+}
+.panel-bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s;
+}
+/* Centered form styles for login/register */
+.centered-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #181a20;
+  z-index: 10;
+}
+.form-card {
+  background: #23252b;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 40px 36px;
+  min-width: 340px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.form-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.form-card p {
+  color: #bdbdbd;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.form-card label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.form-card input {
+  background: #181a20;
+  color: #fff;
+  border: 1px solid #44454a;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+.primary-btn {
+  background: #ffa600;
+  color: #23252b;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  transition: background 0.2s;
+}
+.primary-btn:hover {
+  background: #ffd700;
+}
+.form-footer {
+  text-align: center;
+  color: #bdbdbd;
+  font-size: 1rem;
+}
+.link {
+  color: #ffd700;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 4px;
+}
+body, html, #root, .app-bg {
+  background: #181a20;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 48px 0 48px;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffd700;
+  letter-spacing: 1px;
+}
+nav a {
+  color: #fff;
+  margin-left: 32px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+nav a:hover {
+  color: #ffd700;
+}
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dashboard-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.city-select-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.city-select {
+  background: #23252b;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.buildings-row {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.analytics-row {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.analytics-card {
+  background: #23252b;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 28px 32px;
+  min-width: 340px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.building-card {
+  background: #23252b;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 28px 32px;
+  min-width: 320px;
+  max-width: 340px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.building-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.building-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.building-city {
+  font-size: 0.95rem;
+  color: #ffd700;
+}
+.output-row {
+  margin-top: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.output-bar {
+  position: relative;
+  height: 18px;
+  background: #23252b;
+  border-radius: 9px;
+  margin: 8px 0 6px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.actual-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #ffa600;
+  border-radius: 9px 0 0 9px;
+  z-index: 2;
+}
+.expected-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #44454a;
+  border-radius: 9px;
+  z-index: 1;
+}
+.output-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.98rem;
+  margin-top: 2px;
+  width: 100%;
+}
+.actual-label {
+  color: #ffa600;
+  font-weight: 500;
+}
+.expected-label {
+  color: #ffd700;
+  font-weight: 500;
+}
