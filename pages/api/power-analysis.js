@@ -161,7 +161,10 @@ export default async function handler(req, res) {
 async function getWeatherData(city) {
   try {
     const apiKey = process.env.WEATHER_API_KEY;
-    if (!apiKey) return null;
+    if (!apiKey) {
+      console.warn('WEATHER_API_KEY not configured, weather data unavailable');
+      return null;
+    }
 
     // Map city codes to actual city names
     const cityMap = {

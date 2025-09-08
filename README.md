@@ -39,18 +39,33 @@ A comprehensive solar power monitoring system that uses AI to predict power outp
 ## Setup Instructions
 
 ### 1. Environment Variables
-Create a `.env.local` file with the following variables:
+Create a `.env.local` file in your project root with the following variables:
 
-```env
-# MongoDB Connection
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/solar-monitoring?retryWrites=true&w=majority
+**⚠️ IMPORTANT: Never commit your `.env.local` file to version control!**
 
-# OpenWeatherMap API Key
-WEATHER_API_KEY=your_openweathermap_api_key_here
+Copy the `.env.example` file and fill in your actual values:
 
-# OpenAI API Key for AI Predictions
-OPENAI_API_KEY=your_openai_api_key_here
+```bash
+cp .env.example .env.local
 ```
+
+Then edit `.env.local` with your actual API keys and database connection string.
+
+#### Getting API Keys:
+
+1. **MongoDB Atlas**: 
+   - Create account at [MongoDB Atlas](https://www.mongodb.com/atlas)
+   - Create a cluster and get connection string
+   - Replace `<username>`, `<password>`, and `<cluster-url>` with your values
+
+2. **OpenWeatherMap API**:
+   - Sign up at [OpenWeatherMap](https://openweathermap.org/api)
+   - Get your free API key from the dashboard
+
+3. **OpenAI API**:
+   - Create account at [OpenAI](https://platform.openai.com/)
+   - Generate API key in your dashboard
+   - **Note**: This requires a paid OpenAI account for GPT-4 access
 
 ### 2. Install Dependencies
 ```bash

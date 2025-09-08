@@ -1,9 +1,13 @@
 export default async function handler(req, res) {
   const { city } = req.query;
   const apiKey = process.env.WEATHER_API_KEY;
+  
   if (!city || !apiKey) {
-    return res.status(400).json({ error: "Missing city or API key" });
+    return res.status(400).json({ 
+      error: "Missing city parameter or WEATHER_API_KEY not configured" 
+    });
   }
+  
   try {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     const response = await fetch(url);

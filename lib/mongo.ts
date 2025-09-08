@@ -1,13 +1,15 @@
 import { MongoClient } from "mongodb";
 
+// Validate MongoDB URI
 
 const uri = process.env.MONGO_URI;
-let client: MongoClient;
-let clientPromise: Promise<MongoClient>;
 
 if (!uri) {
-  throw new Error("Please add your Mongo URI to .env.local");
+  throw new Error("MONGO_URI environment variable is required. Please add it to your .env.local file");
 }
+
+let client: MongoClient;
+let clientPromise: Promise<MongoClient>;
 
 declare global {
   // eslint-disable-next-line no-var

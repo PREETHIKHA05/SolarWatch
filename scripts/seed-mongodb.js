@@ -76,7 +76,13 @@ const buildings = [
 async function seedDatabase() {
   const uri = process.env.MONGO_URI;
   if (!uri) {
-    console.error('Please set MONGO_URI environment variable');
+    console.error('MONGO_URI environment variable is required. Please check your .env.local file');
+    process.exit(1);
+  }
+
+  // Validate URI format
+  if (!uri.startsWith('mongodb://') && !uri.startsWith('mongodb+srv://')) {
+    console.error('Invalid MONGO_URI format. Must start with mongodb:// or mongodb+srv://');
     process.exit(1);
   }
 
