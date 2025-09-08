@@ -8,6 +8,7 @@
     "lint": "next lint",
     "start": "next start",
     "seed": "node scripts/seed-mongodb.js"
+    "seed": "node scripts/seed-mongodb.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -65,6 +66,9 @@
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.9",
     "zod": "3.25.67",
+    "mongodb": "^6.3.0",
+    "openai": "^4.28.0",
+    "axios": "^1.6.7"
     "mongodb": "^6.3.0",
     "openai": "^4.28.0",
     "axios": "^1.6.7"
