@@ -13,6 +13,8 @@ import { BuildingCard } from "@/components/building-card"
 import { Filters, type FilterState } from "@/components/filters"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { TriangleAlert } from "lucide-react"
+import { PowerAnalysisDashboard } from "@/components/power-analysis-dashboard"
+import { AlertsPanel } from "@/components/alerts-panel"
 
 
 const fetcher = async () => fetchBuildings()
@@ -174,6 +176,16 @@ export default function DashboardPage() {
               status={b.status}
             />
           ))}
+        </section>
+
+        <section className="mt-10">
+          <h3 className="text-pretty text-lg font-semibold text-zinc-100 mb-4">AI Power Analysis</h3>
+          <PowerAnalysisDashboard />
+        </section>
+
+        <section className="mt-10">
+          <h3 className="text-pretty text-lg font-semibold text-zinc-100 mb-4">System Alerts</h3>
+          <AlertsPanel />
         </section>
 
         <section className="mt-10">

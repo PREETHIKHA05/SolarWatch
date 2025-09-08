@@ -35,7 +35,7 @@ export const buildings: Building[] = [
     efficiency: 712 / 860,
     status: statusFromEff(712 / 860),
     lastUpdated: nowISO(),
-    coords: { lat: 40.758, lng: -73.9855 },
+    coords: { lat: 13.0827, lng: 80.2707 },
   },
   {
     id: "bld-th-01",
@@ -47,7 +47,7 @@ export const buildings: Building[] = [
     efficiency: 710 / 730,
     status: statusFromEff(710 / 730),
     lastUpdated: nowISO(),
-    coords: { lat: 34.0522, lng: -118.2437 },
+    coords: { lat: 13.6288, lng: 79.8878 },
   },
   {
     id: "bld-ka-01",
@@ -59,7 +59,7 @@ export const buildings: Building[] = [
     efficiency: 590 / 800,
     status: statusFromEff(590 / 800),
     lastUpdated: nowISO(),
-    coords: { lat: 37.7749, lng: -122.4194 },
+    coords: { lat: 12.8185, lng: 79.7037 },
   },
   {
     id: "bld-che-01",
@@ -71,7 +71,7 @@ export const buildings: Building[] = [
     efficiency: 725 / 810,
     status: statusFromEff(725 / 810),
     lastUpdated: nowISO(),
-    coords: { lat: 41.8781, lng: -87.6298 },
+    coords: { lat: 12.6819, lng: 79.9864 },
   },
   {
     id: "bld-tri-01",
@@ -83,7 +83,7 @@ export const buildings: Building[] = [
     efficiency: 510 / 670,
     status: statusFromEff(510 / 670),
     lastUpdated: nowISO(),
-    coords: { lat: 32.7767, lng: -96.797 },
+    coords: { lat: 10.7905, lng: 78.7047 },
   },
 ]
 
